@@ -1,6 +1,7 @@
-.wrapper {
+body {
   background-color: #ccc;
 }
+
 .calc-body {
   background-color: #efefef;
   padding: 15px;
@@ -13,13 +14,21 @@
   background-color: #fefefe;
   border-radius: 10px;
   padding: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 .key {
-  padding: 3px 0;
-  margin: 5px 0;
+  padding: 5px 0;
+  margin: 10px 18px;
+  border-radius: 3px;
+  background-color: #fafafa;
   border-radius: 3px;
   cursor: default;
+  border: none;
 }
 .key:hover {
   background-color: #fefefe;
+}
+.key:focus {
+  outline: none;
 }
