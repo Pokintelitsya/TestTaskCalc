@@ -29,10 +29,15 @@ body {
 .full-expression {
   white-space: pre-line;
   font-size: 10px;
+  overflow: hidden;
+}
+.error {
+  color: red;
+  display: none;
 }
 .key {
   padding: 5px 0;
-  margin: 10px 18px;
+  margin: 10px 15px;
   border-radius: 3px;
   background-color: #fafafa;
   border-radius: 3px;
