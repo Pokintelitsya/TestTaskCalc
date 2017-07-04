@@ -2,9 +2,14 @@ $(document).ready(function () {
 
   var expressionData = '0';
   var expressionDataView = $('#display');
-
+  var fullExpression = $('#full');
   var setDisplay = function () {
     expressionDataView.html(expressionData);
+    if(expressionData.length > 45) {
+      fullExpression.html(expressionData);
+    } else {
+      fullExpression.html('');
+    }
   };
   setDisplay();
 
@@ -28,7 +33,7 @@ $(document).ready(function () {
         if(expressionData == '0') {
           expressionData = $(this).attr('value');
         } else {
-          expressionData = expressionData + $(this).attr('value');
+          expressionData = expressionData + ' ' + $(this).attr('value');
         }
         setDisplay();
       }
